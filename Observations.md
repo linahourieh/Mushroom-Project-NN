@@ -19,4 +19,18 @@ These were the easiest. However, double check them. You may do a mistake like me
 (I wrote sigmoid as 1/ 1 * e**-z instead of 1/ 1 + e**-z, that allowed some values in the last layer to be equal to 1. when I calculated the cost function,
 it gave me error RuntimeWarning: divide by zero encountered in log)
 
-- 
+- Try to write a pseduocode starting from the last function, the one that gives you the final result, up to every other function needed.
+- check AL.shape
+- Describe AL
+
+5) Try to build cache inside the feed forward
+6) Write cost function: easy, check the output so far
+
+7) Building Backpropagation:
+This was definietly the hardest part, I copied the code from deep learning ai course
+
+8) Updating the parameters and essembling the model is easy 
+9) I trained it for 3000 iterations, it gave 0.068 as cost, but after doubling the iteration number, the cost decreased to 0.02
+
+10) I tried training for 2000,3000, and 6000 and sat a graph for that
+11) Then I tried to implement L2 regularization, I edited both cost function and Update_parameters function.
